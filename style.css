@@ -221,16 +221,17 @@ form label {
     }
 
     header {
-        height: 30vh;
+        /* height: 30%; */
     }
     .calc-wrapper {
         max-width : 50%;
         min-width: 700px;
         border-radius: 20px;
-        max-height: 80%;
+        min-height: 70%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap : 1rem;
+        margin-bottom: 1rem;
 
     }
 
