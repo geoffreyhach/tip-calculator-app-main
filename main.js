@@ -71,7 +71,13 @@ function calculate() {
     tipPerPerson.innerHTML = tipTotal.toFixed(2);
     let total = (billValue * tip) / peopleNumber ;
     totalPerPerson.innerHTML = total.toFixed(2);
+
+    if (total.toString().replace('.', '').length > 4) totalPerPerson.style.fontSize='1.5rem';
+    if (total.toString().replace('.', '').length > 8) totalPerPerson.style.fontSize='1rem';
+    if (tipTotal.toString().replace('.', '').length > 4) tipPerPerson.style.fontSize='1.5rem';
+    if (tipTotal.toString().replace('.', '').length > 8) tipPerPerson.style.fontSize='1rem';
 }
+
 
 resetBtn.addEventListener('click', () => {
     billInput.value = 0.0;
