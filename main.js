@@ -74,8 +74,7 @@ function calculate() {
 
     if (total.toString().replace('.', '').length > 4) totalPerPerson.style.fontSize='1.5rem';
     if (total.toString().replace('.', '').length > 8) totalPerPerson.style.fontSize='1rem';
-    if (tipTotal.toString().replace('.', '').length > 4) tipPerPerson.style.fontSize='1.5rem';
-    if (tipTotal.toString().replace('.', '').length > 8) tipPerPerson.style.fontSize='1rem';
+    if (total.toString().replace('.', '').length <= 4) totalPerPerson.style.fontSize='2.4rem';
 }
 
 
